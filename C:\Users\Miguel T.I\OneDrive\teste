@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantare - Pedido de Música</title>
+    <style>
+        body {
+            background: url('BG-TV-FUNDO-ESCURO.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: white;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Cantare - Karaokê & Pub" width="200">
+        <h2>Faça seu Pedido de Música</h2>
+        <form action="/enviar-pedido" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="number" name="mesa" placeholder="Número da Mesa" required>
+            <input type="text" name="musica" placeholder="Nome da Música" required>
+            <input type="text" name="cantor" placeholder="Cantor(a)" required>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>
 
